@@ -18,8 +18,8 @@ namespace 缺氧mod
             {
                 __result.Overheatable = false;
                 //buildingDef.OverheatTemperature = 3000f + 273.15f;
-                __result.BaseMeltingPoint = 3000f+273.15f;
-                __result.EnergyConsumptionWhenActive = 100f;
+                __result.BaseMeltingPoint = 3000f + 273.15f;
+                //__result.EnergyConsumptionWhenActive = 100f;
             }
         }
         
