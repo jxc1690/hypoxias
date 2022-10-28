@@ -14,15 +14,12 @@ namespace 缺氧mod
         [HarmonyPatch("CreateBuildingDef")]//定位函数
         public class Patch_a//项目编号
         {
-            public static void Postfix(ref BuildingDef buildingDef)//固定代码
+            public static void Postfix(ref BuildingDef __result)//固定代码
             {
-                buildingDef.Overheatable = false;
+                __result.Overheatable = false;
                 //buildingDef.OverheatTemperature = 3000f + 273.15f;
-                buildingDef.BaseMeltingPoint = 3000f+273.15f;
-                buildingDef.EnergyConsumptionWhenActive = 100f;
-
-
-
+                __result.BaseMeltingPoint = 3000f+273.15f;
+                __result.EnergyConsumptionWhenActive = 100f;
             }
         }
         
